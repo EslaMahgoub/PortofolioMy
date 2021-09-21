@@ -12,10 +12,12 @@ const isRouteActive = (route: string) => {
   return isActive
 }
 
+
 export const useMenu = ():Menu[] => {
   const menu = [
     { label: 'about', route:'/about', active: isRouteActive('/about')},
     { label: 'contact', route: '/contact', active: isRouteActive('/contact')},
+    { label: 'blog', route:'/blog', active: isRouteActive('/blog')}
   ]
 
   return menu

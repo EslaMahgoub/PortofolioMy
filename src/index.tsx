@@ -2,9 +2,10 @@ import ReactDOM from 'react-dom';
 import './styles/index.scss';
 import reportWebVitals from './reportWebVitals';
 import {Router, Switch, Route, Redirect} from 'react-router-dom';
-import {AboutPage} from './pages/AboutPage/AboutPage';
-import {ContactPage} from './pages/ContactPage/ContactPage';
-import { history } from './libs/http/history'
+import {AboutPage} from 'pages/AboutPage/AboutPage';
+import {ContactPage} from 'pages/ContactPage/ContactPage';
+import { history } from 'libs/http/history'
+import { BlogPage } from 'pages/BLogPage/BlogPage';
 
 ReactDOM.render(
   
@@ -13,6 +14,7 @@ ReactDOM.render(
       <Switch>
         <Route path="/contact" component={ContactPage}/>
         <Route path="/about" component={AboutPage}/>
+        <Route path="/blog" component={BlogPage}/>
 
         <Route path="/" exact={true}>
           <Redirect to="/about" exact={true} />
