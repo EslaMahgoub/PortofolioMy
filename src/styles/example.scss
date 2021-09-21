@@ -1,0 +1,13 @@
+@import "./palette.scss";
+
+.btn{
+  width: 300px; 
+  height: 50px;
+
+  &-active
+  {
+    width: 300px; 
+    height: 50px;
+    color: red;
+  }
+}
