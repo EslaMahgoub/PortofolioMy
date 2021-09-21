@@ -1,15 +1,15 @@
 import ReactDOM from 'react-dom';
 import './styles/index.scss';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
+import {Router, Switch, Route, Redirect} from 'react-router-dom';
 import {AboutPage} from './pages/AboutPage/AboutPage';
 import {ContactPage} from './pages/ContactPage/ContactPage';
-
+import { history } from './libs/http/history'
 
 ReactDOM.render(
   
   <div > 
-    <BrowserRouter>
+    <Router history={history}>
       <Switch>
         <Route path="/contact" component={ContactPage}/>
         <Route path="/about" component={AboutPage}/>
@@ -19,7 +19,7 @@ ReactDOM.render(
         </Route>
 
       </Switch>
-    </BrowserRouter>
+    </Router>
 
 
   </div>,

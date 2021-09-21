@@ -24,7 +24,8 @@
     "noUnusedParameters": true, // Report errors on unused parameters
     "incremental": true, // Enable incremental compilation by reading/writing information from prior compilations to a file on disk
     "noFallthroughCasesInSwitch": true, // Report errors for fallthrough cases in switch statement
-    "emitDecoratorMetadata": false
+    "emitDecoratorMetadata": false,
+    "baseUrl": "src", // help with importing no need to do relative imports
   },
   "include": [
     "src/**/*" // *** The files TypeScript should type check ***
